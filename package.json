@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "flask-dev": "FLASK_DEBUG=1 poetry install && poetry run flask --app api/index run -p 5328",
+    "flask-dev": "poetry install --no-root && poetry run flask --app api/index run -p 5328 --reload",
     "next-dev": "next dev",
     "dev": "concurrently \"npm run next-dev\" \"npm run flask-dev\"",
     "build": "next build",
