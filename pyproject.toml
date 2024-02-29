@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "nextjs-flask"
+version = "0.1.0"
+description = ""
+authors = ["simonbeirouti <hello@simonbeirouti.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+numpy = "^1.26.4"
+Flask = "^3.0.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
